@@ -10,7 +10,7 @@ Simple React/SASS/Webpack Starter.
 Clone Repo
 ```
 > git clone https://github.com/rmorris84/react-starter.git
-> cd react-portfolio
+> cd react-starter
 ```
 
 Install all the necessary dependencies.
@@ -23,4 +23,4 @@ Start the development server
 > npm run dev
 ```
 
-To view project, go to: [http://localhost:3000/](http://localhost:3000/)
+To view project, go to: [http://localhost:8000/](http://localhost:8000/)

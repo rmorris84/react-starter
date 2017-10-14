@@ -1,0 +1,19 @@
+// Font Imports
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900|Raleway');
+
+// Font Weight
+$weight-light: 200;
+$weight-normal: 400;
+$weight-semibold: 600;
+$weight-bold: 800;
+
+// Font Stack
+// -------------------------
+$font-main: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-secondary: "Montserrat", sans-serif;
+$font-color: $gray-darker;
+$font-inverse: $white;
+$ff-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$ff-serif: Georgia, "Times New Roman", Times, serif !default;
+$ff-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$ff-base: $ff-sans-serif !default;

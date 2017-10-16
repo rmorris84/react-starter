@@ -29,7 +29,7 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'bundle.js',
-		publicPath: '/'
+		publicPath: './'
 	},
 	// Convert ES6
 	module: {
@@ -52,12 +52,19 @@ module.exports = {
 				}]
 			},
 			{
-				test: /\.html$/,
+        test: /\.html$/,
+        exclude: /node_modules/,
 				loader: 'html-loader'
-			},
+      },
+      {
+        test: /\.scss$/,
+        exclude: /node_modules/,
+        use: ["style-loader", "css-loader", "sass-loader"]
+      },
 			{
 				// Loads Images and compresses for web
-				test: /\.(gif|png|jpe?g|svg)$/i,
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        exclude: /node_modules/,
 				use: [
 					'file-loader',
 					{
@@ -88,12 +95,14 @@ module.exports = {
 			},
 			{
 				// Handles Web Fonts
-				test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        exclude: /node_modules/,
 				loader: 'url-loader?limit=10000&mimetype=application/font-woff',
 			},
 			{
 				// Handles Images
-				test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        exclude: /node_modules/,
 				loader: 'file-loader',
 			},
 		]

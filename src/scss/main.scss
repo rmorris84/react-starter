@@ -2,6 +2,11 @@
 // Imports
 // --------------------------------------------------------------------
 
+// Font Awesome
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+
+// Project Styles
 @import "modules/normalize";
 @import "modules/breakpoints";
 @import "modules/mixins";
